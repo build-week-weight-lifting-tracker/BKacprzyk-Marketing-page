@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>About</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <header>
+        <a id="logo" href="index.html">Weight Lifting Tracker</a>
+        <nav>
+            <a class="navItem" href="index.html">Welcome</a>
+            <a class="navItem" href="about.html">About</a>
+            <a class="navItem" href="contact.html">Contact</a>
+            <a class="navItem" href="#" id="signUp">Sign Up</a>
+        </nav>
+    </header>
+    <header class="mobileHeader">
+        <a id="logo" href="index.html">Weight Lifting Tracker</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Welcome ⮟</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Welcome</a>
+                <a href="about.html">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <img class="headerImg" src="img/aboutHeader.jpg" />
+    <div class="about">
+        <br />
+        <h3>Our Mission</h3>
+        <p>
+            Weight Lifting Tracker was founded by a team dedicated to helping people feel confident. Our goal was to help individuals stay focused and motivated to lose weight and gain muscle. We want to work with you as a team to grant you the pleasure of having a body you love and feel comfortable showing off.
+        </p>
+        <br />
+        <br />
+        <p>
+            Our app features a weight log journal that will keep track of how much weight you have lost or gained. Remember muscle weighs more than fat! With our journal comes a way to track your reps, create your own exercise, create a custom workout plan, and so much more! We have also implimented notifications that send you positive but demanding messages to keep you on track. To help with motivation and to keep you entertained we have a vast variety of workout tutorials and weekly challenges. As of our latest patch you can now even connect different devices such as FitBit and Apple Health to monitor your progress. We hope to keep growing as a community to bring you more and more features.
+        </p>
+        <br />
+        <br />
+        <p>
+            We have a open and accepting community of dedicated individuals to help encourage you. Please feel free to browse our forms, tag us on instagram, share your workout routines, and upload your progress. Don't be shy, show off your new bod!
+        </p>
+        <div class="buttonLinks">
+            <a class="links" href="#">Instagram</a>
+            <a class="links" href="#">Form</a>
+            <a class="links" href="#">Routines</a>
+            <a class="links" href="#">Photos</a>
+            <a class="links" href="#">AppStore</a>
+        </div>
+    </div>
+    <footer>
+        <a class="footerItem" href="index.html">Welcome</a>
+        <a class="footerItem" href="about.html">About</a>
+        <a class="footerItem" href="contact.html">Contact</a>
+        <a class="footerItem" href="#">Sign Up</a>
+    </footer>
+
+</body>
+</html>
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>

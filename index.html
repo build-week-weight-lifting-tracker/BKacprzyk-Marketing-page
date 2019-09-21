@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Weight Lifting Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body class="home">
+    <header>
+        <a id="logo" href="index.html">Weight Lifting Tracker</a>
+        <nav>
+            <a class="navItem" href="index.html">Welcome</a>
+            <a class="navItem" href="about.html">About</a>
+            <a class="navItem" href="contact.html">Contact</a>
+            <a class="navItem" href="#" id="signUp">Sign Up</a>
+        </nav>
+    </header>
+    <header class="mobileHeader">
+        <a id="logo" href="index.html">Weight Lifting Tracker</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Welcome ⮟</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Welcome</a><br />
+                <a href="about.html">About</a><br />
+                <a href="#">Contact</a><br />
+                <a href="#">Sign Up</a><br />
+            </div>
+        </div>
+    </header>
+    <div class="top">
+        <div class="homeHead">
+            <img class="homeImgH" src="img/homeHeader.jpg" />
+            <h1>Fitness starts with motivation.</h1>
+            <p class="starter">Take control of your life and get swole. Our advanced app garuntees results. We have a full proff method to get and keep you in shape. Start loving your body and download Weight Lifting Tracker today!</p>
+            <br>
+            <br />
+            <br />
+            <br />
+            <a class="bSign" href="#">Sign Up Today!</a>
+            <a class="bSignTwo" href="#">Sign Up Today!</a>
+        </div>
+        <img class="homeImg" src="img/homeHeader.jpg" />
+    </div>
+    <div id="about">
+        <img class="manImg" src="img/man.jpg" />
+        <div class="homeAbo">
+            <h1 id="aTitle">About Our App</h1>
+            <p class="aText">
+                I would like to welcome you to our weight lifting family. This app started small and grew as time went on. Here at Weight Lifting Tracker we want to do everything we can to support you in your endeavor. We have everything you would possibly need to loose weight and gain muscle. To read more about us click the button below!
+            </p>
+            <a class="bAbout" href="about.html"> Read More! </a>
+            <a class="bSignTwo" id="needMargin" href="#">Read More!</a>
+        </div>
+    </div>
+    <div class="top">
+
+        <div class="homeHead">
+            <h1>Support </h1>
+            <p class="starter">
+                One of the best parts of our app is our evergrowing family. We have a large support system kept in place to help you succeed. On top of our inclusive execise videos and custom workout plans, we also have forms to post progress and questions. Don't hesitate to reach out! We want you to succeed!
+            </p>
+            <br />
+            <br />
+            <br />
+            <a class="bSign" href="about.html"> Forms </a>
+            <a class="bSignTwo" href="#">Forms</a>
+        </div>
+   
+        <img class="homeImg" src="img/woman.jpg" />
+    </div>
+    
+</body>
+</html>
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
