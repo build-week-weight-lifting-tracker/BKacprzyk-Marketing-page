@@ -112,6 +112,7 @@ footer {
     opacity: 0.5;
 }
 #signUp {
+    margin-left: 10px;
     background-color: #d4733f;
     border-radius: 5px;
     text-decoration: none;
@@ -221,8 +222,15 @@ h1 {
         line-height: 20px;
         width: 600px;
     }
+    .buttonLinks{
+        justify-content:center;
+        align-items:flex-start;
+    }
+    .links{
+        display:block;
+    }
 }
-@media(max-width: 900px){
+@media(max-width: 1000px){
     header{
         padding: 30px 5px;
     }
@@ -357,11 +365,13 @@ h1 {
 }
 
 /*About Page*/
+   
     .about {
         width: 75%;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        
     }
     .headerImg {
         width: 70%;
@@ -394,7 +404,7 @@ h1 {
         border: solid 2px #919191;
         border-radius: 10px;
         margin-top: 50px;
-        width: 10%;
+        width: 20%;
         text-align: center;
     }
     .links:hover {
@@ -402,5 +412,125 @@ h1 {
         border: solid 2px #eb9c73;
         opacity:0.7;
     }
-
-
+    .teamMembers{
+        display:block;
+        margin-left: 10%
+    }
+    .team {
+        display: inline-block;
+        width: 33%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .teamM {
+        width: 80%;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+    .description {
+        width: 80%;
+        text-align: center;
+    }
+    .profile{
+        color:black;
+        font-weight: bold;
+    }
+    @media(max-width: 850px){
+        .teamM{
+            margin-left: 30% ;
+        }
+        .team{
+            width: 40%;
+        }
+        .description{
+            width: 120%;
+        }
+    }
+/*Contact*/
+    .contact{
+        width: 80%;
+        display:block;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .contactHeader {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 4rem;
+    }
+    .contactInfo{
+        margin-top: 40px;
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+        color:#8c8c8c ;
+    }
+    .cHeader{
+        text-decoration: underline;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .cInfo{
+        font-size: 1.7rem;
+        margin-top: 15px;
+        line-height: 30px;
+        color: black;
+    }
+    form {
+        margin-top: 30px;
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input[type=text], textarea {
+        width: 40%;
+        margin: 5px;
+        padding: 13px 1px;
+        border-radius: 10px;
+        color: black;
+        font-size: 1.8rem;
+        background-color: #dedede;
+    }
+    input[type=submit] {
+        background-color: #d4733f;
+        border-radius: 10px;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 2rem;
+        color: black;
+    }
+    textarea{
+        width: 80%;
+    }
+    .small{
+        text-align: center;
+    }
+    .submit{
+        text-align: right; 
+    }
+    @media(max-width: 1000px){
+        .contactInfo {
+            display: block;
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media(max-width: 640px){
+        .footerItem{
+            font-size: 1rem;
+        }
+        .submit{
+            text-align: center;
+        }
+    }
+    @media(max-width: 550px){
+        .contact{
+            width: 100%;
+        }
+        form{
+            width: 100%;
+        }
+    }
