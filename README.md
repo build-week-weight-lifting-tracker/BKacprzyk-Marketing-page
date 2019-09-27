@@ -28,9 +28,11 @@ Follow these steps to set up and work on my project:
 To Run the Project
 
 Locally 
+
 [ ] Right click the HTML code and click "Run in browser"
 
 Online
+
 [ ] Link your GitHub to Netlify.com
 
 [ ] Click "New site from Git"
