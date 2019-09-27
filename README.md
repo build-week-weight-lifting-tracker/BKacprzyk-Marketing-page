@@ -18,7 +18,9 @@ Project Set up
 Follow these steps to set up and work on my project:
 
 [ ] Create a forked copy of this project.
+
 [ ] Clone your OWN version of Repo.
+
 [ ] You are now ready to edit this project.
 
 
@@ -30,8 +32,13 @@ Locally
 
 Online
 [ ] Link your GitHub to Netlify.com
+
 [ ] Click "New site from Git"
+
 [ ] Click GitHub and Configure Netlify to have access to your repositories
+
 [ ] Click your forked version of my project (BKacprzyk-Marketing-page) 
+
 [ ] Make sure in the options the site deploys from the master branch
+
 [ ] Click "Deploy Site"
