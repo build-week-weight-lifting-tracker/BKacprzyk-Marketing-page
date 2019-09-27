@@ -500,6 +500,9 @@ h1 {
         font-size: 2rem;
         color: black;
     }
+    input[type=submit]:hover{
+        opacity:0.8;
+    }
     textarea{
         width: 80%;
     }
